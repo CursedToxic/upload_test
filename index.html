@@ -50,7 +50,13 @@
                         <span class="icon">
                             <ion-icon name="lock-closed"></ion-icon>
                         </span>
-                        <input id="pinInput" type="password" required>
+                        <input 
+                        id="pinInput" 
+                        type="password" 
+                        required 
+                        minlength="8"
+                        oninvalid="setCustomValidity('Password must be more than 8 characters long & alphanumeric')" 
+                        oninput="setCustomValidity('')">
                         <label>Password</label>
                     </div>
                     <button id="userSubmit" type="submit">Login</button>

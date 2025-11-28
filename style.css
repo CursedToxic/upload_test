@@ -19,7 +19,7 @@ section {
 .login-box {
     position: relative;
     width: 400px;
-    height: 450px;
+    height: 460px;
     background: transparent;
     border: 2px solid rgba(255, 255, 255, 0.05);
     border-radius: 20px;
@@ -101,7 +101,7 @@ button {
     }
 }
 
-@media (max-height: 450px) {
+@media (max-height: 480px) {
     .login-box {
         width: 100dvw;
         border: none;

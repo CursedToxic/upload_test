@@ -9,7 +9,7 @@ document.getElementById('userSubmit').onclick = function(){
     birthdate = document.getElementById("birthInput").value;
     password = document.getElementById("pinInput").value;
 
-    if(username && email && birthdate && password){
+    if(username && email && birthdate && password && valid_password){
         document.getElementById("demo").innerText = 
         `${username}
         ${email}
