@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Results</title>
+    <link rel="stylesheet" href="results.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body>
+    <section>
+        <div class="results-box">
+            <h2>Your Submitted Details</h2>
+
+            <div class="results-list">
+                <p><ion-icon name="person"></ion-icon> <strong>Username:</strong> <span id="r_username"></span></p>
+                <p><ion-icon name="mail"></ion-icon> <strong>Email:</strong> <span id="r_email"></span></p>
+                <p><ion-icon name="calendar"></ion-icon> <strong>Date of Birth:</strong> <span id="r_birth"></span></p>
+                <p>
+                    <ion-icon name="lock-closed"></ion-icon> <strong>Password:</strong>
+                    <span id="r_password"></span>
+                    <span class="toggle-password" onclick="togglePassword()">
+                        <ion-icon id="eyeIcon" name="eye-off"></ion-icon>
+                    </span>
+                </p>
+            </div>
+
+            <button onclick="window.location.href='index.html'" class="back-btn">
+                Back
+            </button>
+        </div>
+    </section>
+    <script src="results.js"></script>
+</body>
+</html>

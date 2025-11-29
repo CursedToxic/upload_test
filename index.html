@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html id="demo" lang="en-AU">
+<html lang="en-AU">
 
     <head>
         <meta charset="UTF-8">
@@ -12,7 +12,7 @@
     <body>
         <section>
             <div class="login-box">
-                <form action="">
+                <form action="results.html">
                     <h2>Login</h2>
                     <div class="input-box">
                         <span class="icon">
@@ -50,11 +50,15 @@
                         <span class="icon">
                             <ion-icon name="lock-closed"></ion-icon>
                         </span>
+                        <span class="toggle-password" onclick="togglePassword()">
+                            <ion-icon id="eyeIcon" name="eye-off"></ion-icon>
+                        </span>
                         <input 
                         id="pinInput" 
                         type="password" 
                         required 
                         minlength="8"
+                        pattern="(?=.*[A-Za-z])(?=.*\d)[A-Za-z0-9]{8,}"
                         oninvalid="setCustomValidity('Password must be more than 8 characters long & alphanumeric')" 
                         oninput="setCustomValidity('')">
                         <label>Password</label>
